@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Grupos aleatorios</title>
+</head>
+<body>
+    
+    <header></header>
+    <main>
+
+        <span id="mensajeAlerta"></span>
+
+        <section class="imagen">
+            <img height="100px" width="200px" src ="img/leaf-152047_640.png" alt="Trabajo en grupo"  >
+        </section>
+
+        <section class="app">
+            <div class="members">
+                <label for="memberName">Registre un Nombre</label>
+                <input type="text" id="memberName" placeholder="Presione Enter para agregar">
+            </div>
+            
+            <div class="groups">
+                <label for="groupsNumber"> cantidad de grupos </label>
+                <input type="number" id="groupsNumber" min="1" placeholder="Ingrese cantidad de grupos" >
+            </div>
+    
+            <button  class="btn" onclick="generarGrupos()">Generar Grupos</button>
+            <button  class="btn reset" onclick="resetearDatos()">Nueva Solicitud</button>
+
+            <div id="nombresContainer"></div>
+            <span id="totalParticipantes"></span>
+            <div id="resultadoGrupos"></div>
+            <div id="totalGrupos"></div>
+    
+        </div>
+        </section>
+        
+
+        
+    </main>
+    <footer></footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
